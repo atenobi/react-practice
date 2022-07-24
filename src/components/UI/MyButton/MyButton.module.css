@@ -1,0 +1,13 @@
+.myButton {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.myButton:hover {
+    color: rgb(68, 68, 255);
+}
+
+.myButton:disabled {
+    color: gray;
+}

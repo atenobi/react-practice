@@ -1,0 +1,15 @@
+@import "./components/UsingJsx/usingJsx.css";
+
+.App {
+  margin: 0;
+  padding: 40px;
+}
+
+.component-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+
