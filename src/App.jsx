@@ -6,6 +6,7 @@ import UseStateCounter from "./components/UseStateCounter/UseStateCounter";
 import ClassComponent from './components/ClassComponent/ClassComponent';
 import PropsComponent from './components/PropsComponent/PropsComponent';
 import MyForm from './components/MyForm/MyForm';
+import CreatingElementsWithCallback from './components/CreatingElementsWithCallback/CreatingElementsWithCallback';
 
 // constants
 import { maxObject, mashaObject } from './constants/personsObjects';
@@ -16,11 +17,12 @@ function App() {
       <UsingJsx />
       <UseStateCounter />
       <ClassComponent />
-      
+
       <PropsComponent person={maxObject} />
       <PropsComponent person={mashaObject} />
       
       <MyForm />
+      <CreatingElementsWithCallback />
     </div>
   );
 }

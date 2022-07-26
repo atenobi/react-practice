@@ -9,7 +9,7 @@
 -castom UI elements
 -useState
 -useRef
--
+-useMemo -> CreatingElementsWithCallback
 
 # Getting Started with Create React App
 
