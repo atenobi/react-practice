@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 
 // childrems components
 import CreationForm from "./ChildsFormLIst/CreationForm";
@@ -7,18 +7,19 @@ import ElementList from "./ChildsFormLIst/ElementList";
 // UI
 import MySelect from "../UI/MySelect/MySelect";
 import MyInput from "../UI/MyInput/MyInput";
+// import MyModal from "../UI/MyModal/MyModal";
 
 const CreatingElementsWithCallback = () => {
   const [elemArray, setElemArray] = useState([
     {
       id: 1,
       title: "title - 1",
-      body: "it`s 1 element",
+      body: "it`s 1 element Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, animi",
     },
     {
       id: 2,
       title: "title - 2",
-      body: "it`s 2 element",
+      body: "it`s 2 element Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis",
     },
   ]);
 
@@ -38,7 +39,9 @@ const CreatingElementsWithCallback = () => {
 
   // searchig function
   const sortedAndSearchedElems = useMemo(() => {
-    return sortedElements.filter(elem => elem.title.toLowerCase().includes(searchquery.toLowerCase()));
+    return sortedElements.filter((elem) =>
+      elem.title.toLowerCase().includes(searchquery.toLowerCase())
+    );
   }, [searchquery, sortedElements]);
 
   const sortFunction = (sort) => {
@@ -53,15 +56,20 @@ const CreatingElementsWithCallback = () => {
     setElemArray(elemArray.filter((el) => el.id !== elem.id));
   };
 
+  useEffect(()=> {}, [sortedAndSearchedElems]);
+
   return (
     <div className="component-container">
       <CreationForm addNewEl={createNewEl} />
+
+      {/* <MyModal></MyModal> */}
 
       <MyInput
         value={searchquery}
         onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="search"
       />
+
       <MySelect
         defaultValue="Sort by"
         options={[
@@ -78,17 +86,11 @@ const CreatingElementsWithCallback = () => {
         onChange={sortFunction}
       />
 
-      {sortedAndSearchedElems.length ? (
-        <ElementList
-          elements={sortedAndSearchedElems}
-          title="Elements on page"
-          remove={removeEl}
-        />
-      ) : (
-        <>
-          <h5>Nothing was finded</h5>
-        </>
-      )}
+      <ElementList
+        elements={sortedAndSearchedElems}
+        title="Elements on page"
+        remove={removeEl}
+      />
     </div>
   );
 };

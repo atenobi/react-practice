@@ -10,6 +10,7 @@
 -useState
 -useRef
 -useMemo -> CreatingElementsWithCallback
+-useEffect
 
 # Getting Started with Create React App
 

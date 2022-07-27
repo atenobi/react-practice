@@ -1,7 +1,15 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const ElementList = ({ elements, title, remove }) => {
+  if (!elements.length) {
+    return (
+      <>
+        <h5>Nothing was finded</h5>
+      </>
+    );
+  }
+
   return (
     <>
       <h4>{title}</h4>
@@ -10,7 +18,7 @@ const ElementList = ({ elements, title, remove }) => {
           <div key={element.id}>
             <h5>{element.title}</h5>
             <p>{element.body}</p>
-            <button onClick={()=> remove(element)}>Remove this item</button>
+            <button onClick={() => remove(element)}>Remove this item</button>
           </div>
         );
       })}
@@ -19,9 +27,9 @@ const ElementList = ({ elements, title, remove }) => {
 };
 
 ElementList.propTypes = {
-    elements: PropTypes.array.isRequired,
-    title: PropTypes.string.isRequired,
-    remove: PropTypes.func.isRequired,
+  elements: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  remove: PropTypes.func.isRequired,
 };
 
 export default ElementList;
