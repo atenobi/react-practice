@@ -7,7 +7,8 @@ import ElementList from "./ChildsFormLIst/ElementList";
 // UI
 import MySelect from "../UI/MySelect/MySelect";
 import MyInput from "../UI/MyInput/MyInput";
-// import MyModal from "../UI/MyModal/MyModal";
+import MyModal from "../UI/MyModal/MyModal";
+import MyButton from "../UI/MyButton/MyButton";
 
 const CreatingElementsWithCallback = () => {
   const [elemArray, setElemArray] = useState([
@@ -25,6 +26,9 @@ const CreatingElementsWithCallback = () => {
 
   const [selectedSort, setSelectedSort] = useState("");
   const [searchquery, setSearchQuery] = useState("");
+
+  // modal window
+  const [modal, setModal] = useState(false);
 
   const sortedElements = useMemo(() => {
     // callback + arr of deps (it`s for optimisation if one of deps change -> call callback)
@@ -50,26 +54,30 @@ const CreatingElementsWithCallback = () => {
 
   const createNewEl = (newEl) => {
     setElemArray([...elemArray, newEl]);
+    setModal(false);
   };
 
   const removeEl = (elem) => {
     setElemArray(elemArray.filter((el) => el.id !== elem.id));
   };
 
-  useEffect(()=> {}, [sortedAndSearchedElems]);
+  useEffect(() => {}, [sortedAndSearchedElems]);
 
   return (
     <div className="component-container">
-      <CreationForm addNewEl={createNewEl} />
+      <MyButton onClick={() => setModal(true)}>
+        create element modal window
+      </MyButton>
 
-      {/* <MyModal></MyModal> */}
+      <MyModal visible={modal} setVisible={setModal}>
+        <CreationForm addNewEl={createNewEl} />
+      </MyModal>
 
       <MyInput
         value={searchquery}
         onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="search"
       />
-
       <MySelect
         defaultValue="Sort by"
         options={[
@@ -85,7 +93,6 @@ const CreatingElementsWithCallback = () => {
         value={selectedSort}
         onChange={sortFunction}
       />
-
       <ElementList
         elements={sortedAndSearchedElems}
         title="Elements on page"

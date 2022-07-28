@@ -9,10 +9,10 @@
 }
 
 .myModalContent {
-    padding: 10px;
+    padding: 40px;
+    border-radius: 10px;
     background-color: aliceblue;
     min-width: 250px;
-    min-height: 20px;
 }
 
 .myModal.active {

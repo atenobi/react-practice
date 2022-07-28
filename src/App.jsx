@@ -7,6 +7,7 @@ import ClassComponent from './components/ClassComponent/ClassComponent';
 import PropsComponent from './components/PropsComponent/PropsComponent';
 import MyForm from './components/MyForm/MyForm';
 import CreatingElementsWithCallback from './components/CreatingElementsWithCallback/CreatingElementsWithCallback';
+import PaginationComponent from './components/PaginationComponent/PaginationComponent';
 
 // constants
 import { maxObject, mashaObject } from './constants/personsObjects';
@@ -23,6 +24,8 @@ function App() {
       
       <MyForm />
       <CreatingElementsWithCallback />
+
+      <PaginationComponent />
     </div>
   );
 }

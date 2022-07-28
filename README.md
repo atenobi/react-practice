@@ -11,6 +11,9 @@
 -useRef
 -useMemo -> CreatingElementsWithCallback
 -useEffect
+-modal window
+-propagation
+-dinamic pagination
 
 # Getting Started with Create React App
 
