@@ -9,12 +9,13 @@ import "./App.css";
 // import MyForm from "./components/MyForm/MyForm";
 // import CreatingElementsWithCallback from "./components/CreatingElementsWithCallback/CreatingElementsWithCallback";
 // import PaginationComponent from "./components/PaginationComponent/PaginationComponent";
+import StyledComponent from "./components/StyledComponent/StyledComponent";
 
 // react 18 what new
 
 // import AsynchBaching from "./components/AsynchBaching/AsynchBaching";
 // import UseTransition from "./components/Concurrent/UseTransition";
-import UseDeferredValue  from "./components/Concurrent/UseDeferredValue";
+// import UseDeferredValue  from "./components/Concurrent/UseDeferredValue";
 
 // constants
 // import { maxObject, mashaObject } from "./constants/personsObjects";
@@ -33,10 +34,12 @@ function App() {
       <CreatingElementsWithCallback /> */}
 
       {/* <PaginationComponent /> */}
+
+      <StyledComponent />
       {/* react 18 */}
       {/* <AsynchBaching /> */}
       {/* <UseTransition /> */}
-      <UseDeferredValue />
+      {/* <UseDeferredValue /> */}
     </div>
   );
 }

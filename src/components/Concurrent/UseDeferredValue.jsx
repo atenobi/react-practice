@@ -10,7 +10,6 @@ const UseDeferredValue = () => {
 
   // deffered value - instrument for delay rendering
   // really close to hok useTransition
-  // 
 
   const defferedValue = useDeferredValue(value);
 
@@ -24,7 +23,6 @@ const UseDeferredValue = () => {
     setValue(e.target.value);
   };
 
-  console.log(defaultItems);
   return (
     <div className="component-container">
       <input type="text" value={value} onChange={onChangeValue} />
