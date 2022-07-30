@@ -16,7 +16,7 @@ const PaginationComponent = () => {
         .then((response) => {
           setObjects([...objets, ...response.data]);
           setCurrentPage((prev) => prev + 1);
-          console.log(response.headers["x-total-count"]);
+        //   console.log(response.headers["x-total-count"]);
           setTotalCount(response.headers["x-total-count"]);
         })
         .finally(() => setFetching(false));

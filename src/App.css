@@ -12,4 +12,12 @@
   border: 1px solid grey;
 }
 
-
+.item-container {
+  width: 96%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(236, 182, 182);
+}

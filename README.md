@@ -1,20 +1,25 @@
 # Themes
 
--jsx
--components
--css.module
--props
--proptypes
--driven elements
--castom UI elements
--useState
--useRef
--useMemo -> CreatingElementsWithCallback
--useEffect
--modal window
--propagation
--dinamic pagination
+# jsx
+# components
+# css.module
+# props
+# proptypes
+# driven elements
+# castom UI elements
+# useState
+# useRef
+# useMemo -> CreatingElementsWithCallback
+# useEffect
+# modal window
+# propagation
+# dinamic pagination
+# batching
+# useTransitiov(react 18)
+# deferredValue(react1 18)
 
+
+_______________________________________
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
