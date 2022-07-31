@@ -9,7 +9,8 @@ import "./App.css";
 // import MyForm from "./components/MyForm/MyForm";
 // import CreatingElementsWithCallback from "./components/CreatingElementsWithCallback/CreatingElementsWithCallback";
 // import PaginationComponent from "./components/PaginationComponent/PaginationComponent";
-import StyledComponent from "./components/StyledComponent/StyledComponent";
+// import StyledComponent from "./components/StyledComponent/StyledComponent";
+import TransitionGroup from "./components/TransitionGroup/TransitionGroup";
 
 // react 18 what new
 
@@ -35,7 +36,9 @@ function App() {
 
       {/* <PaginationComponent /> */}
 
-      <StyledComponent />
+      {/* <StyledComponent /> */}
+      <TransitionGroup />
+
       {/* react 18 */}
       {/* <AsynchBaching /> */}
       {/* <UseTransition /> */}

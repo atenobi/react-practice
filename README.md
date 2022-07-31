@@ -16,6 +16,7 @@
 ## dinamic pagination
 ## batching
 ## styled components
+## transitionGroup lib
 
 ## useTransitiov(react 18)
 ## deferredValue(react 18)

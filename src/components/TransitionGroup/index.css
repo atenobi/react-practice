@@ -1,0 +1,55 @@
+.text-element1 {
+  background-color: darkgrey;
+  border: 1px solid grey;
+  padding: 10px;
+  color: white;
+}
+
+.text-element2 {
+    background-color: rgb(123, 194, 249);
+    border: 1px solid rgb(53, 126, 235);
+    padding: 10px;
+    color: white; 
+  }
+
+/* animations */
+
+.animated1-enter {
+  opacity: 0;
+  transform: scale(0.6);
+}
+.animated1-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.animated1-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.animated1-exit-active {
+  transform: translateX(100px);
+  transition: 200ms;
+  opacity: 0;
+}
+
+/* another text element */
+
+.animated2-enter {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  .animated2-enter-active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 400ms, transform 1000ms;
+  }
+  .animated2-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .animated2-exit-active {
+    transform: translateX(100px);
+    transition: 1000ms ease-out;
+    opacity: 0;
+  }
