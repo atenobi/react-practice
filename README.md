@@ -17,6 +17,7 @@
 ## batching
 ## styled components
 ## transitionGroup lib
+## UI loader(keyframes animation)
 
 ## useTransitiov(react 18)
 ## deferredValue(react 18)

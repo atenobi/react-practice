@@ -1,0 +1,23 @@
+.Loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-top: 16px solid rgba(21, 61, 238, 0.4);
+  border-right: 16px solid rgba(21, 61, 238, 0.3);
+  border-bottom: 16px solid rgba(21, 61, 238, 0.2);
+  border-left: 16px solid rgba(21, 61, 238, 0.1);
+  animation: rotate 3s infinite linear;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    box-shadow: 0 0 1px rgb(21, 61, 238);
+  }
+
+  to {
+    transform: rotate(360deg);
+    box-shadow: 0 0 100px rgb(21, 61, 238);
+  }
+}

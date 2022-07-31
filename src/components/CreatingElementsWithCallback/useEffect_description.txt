@@ -1,0 +1,19 @@
+useEffect structure
+
+component life circle = mount -> update -> unmount
+
+useEffect(() => {
+    body
+    some logic
+    functions()
+    fetchs()
+    ext.
+
+    return () => {
+        it`s cleaning zone
+        we can:
+         delete some event listeners
+         clean states global states
+    }
+
+},[array of deps(if something change here it will call calback from body) if this array is empty callback will call once in mount stady]);

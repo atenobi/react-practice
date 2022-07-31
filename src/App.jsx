@@ -8,9 +8,10 @@ import "./App.css";
 // import PropsComponent from "./components/PropsComponent/PropsComponent";
 // import MyForm from "./components/MyForm/MyForm";
 // import CreatingElementsWithCallback from "./components/CreatingElementsWithCallback/CreatingElementsWithCallback";
+import FetchingComponent from "./components/FetchingComponent/FetchingComponent";
 // import PaginationComponent from "./components/PaginationComponent/PaginationComponent";
 // import StyledComponent from "./components/StyledComponent/StyledComponent";
-import TransitionGroup from "./components/TransitionGroup/TransitionGroup";
+// import TransitionGroup from "./components/TransitionGroup/TransitionGroup";
 
 // react 18 what new
 
@@ -24,20 +25,20 @@ import TransitionGroup from "./components/TransitionGroup/TransitionGroup";
 function App() {
   return (
     <div className="App">
-      {/* <UsingJsx />
-      <UseStateCounter />
-      <ClassComponent />
+       {/* <UsingJsx /> */}
+      {/* <UseStateCounter /> */}
+      {/* <ClassComponent /> */}
 
-      <PropsComponent person={maxObject} />
-      <PropsComponent person={mashaObject} />
+      {/* <PropsComponent person={maxObject} /> */}
+      {/* <PropsComponent person={mashaObject} /> */}
 
-      <MyForm />
-      <CreatingElementsWithCallback /> */}
-
+      {/* <MyForm /> */}
+       {/* <CreatingElementsWithCallback />  */}
+       <FetchingComponent/>
       {/* <PaginationComponent /> */}
 
       {/* <StyledComponent /> */}
-      <TransitionGroup />
+      {/* <TransitionGroup /> */}
 
       {/* react 18 */}
       {/* <AsynchBaching /> */}

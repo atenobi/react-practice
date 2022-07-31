@@ -21,3 +21,13 @@
   justify-content: space-between;
   border: 1px solid rgb(236, 182, 182);
 }
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
